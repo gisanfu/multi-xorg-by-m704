@@ -1,0 +1,21 @@
+OS: 
+
+   ubuntu 9.04
+
+Action:
+
+   when select general grub item => run 1024x600
+   when select External Monitor grub item => run normal mode(maybe 1024x768)
+
+1. see menu.lst-sample(grub config file)
+   and add custom arg to kernel
+
+2. copy file
+
+   cp xorg.conf.* /etc/X11/
+   cp gisanfu-switch-xorg.sh /etc/init.d/
+   chmod +x /etc/init.d/gisanfu-switch-xorg.sh
+
+3. exec update-rc.d
+
+   update-rc.d gisanfu-switch-xorg.sh defaults

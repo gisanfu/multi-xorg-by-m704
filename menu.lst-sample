@@ -1,0 +1,14 @@
+default		0
+timeout		10
+
+title		Ubuntu 9.04, kernel 2.6.28-18-generic
+uuid		a3b335aa-e3ee-4df4-b677-1a663671c39c
+kernel		/boot/vmlinuz-2.6.28-18-generic root=UUID=a3b335aa-e3ee-4df4-b677-1a663671c39c ro locale=zh_TW quiet splash 
+initrd		/boot/initrd.img-2.6.28-18-generic
+quiet
+
+title		Ubuntu 9.04, kernel 2.6.28-18-generic External Monitor
+uuid		a3b335aa-e3ee-4df4-b677-1a663671c39c
+kernel		/boot/vmlinuz-2.6.28-18-generic root=UUID=a3b335aa-e3ee-4df4-b677-1a663671c39c ro locale=zh_TW quiet splash gisanfu-switch-xorg-768
+initrd		/boot/initrd.img-2.6.28-18-generic
+quiet
